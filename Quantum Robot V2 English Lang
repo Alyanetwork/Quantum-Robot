@@ -1,0 +1,747 @@
+//
+//TÜM HAKLARI YASAKLIDIR TELİF HAKLARI ALYA İNTERNET TEKNOLOJİLERİNE AYİTTİR İZİNSİZ DEĞİŞTİRİLEMEZ 
+
+// TÜRKÇE BİLGİLENDİRME
+// bu yazılım  alya internet teknolojileri tarafından  geliştirilmiş olup siz yatırımcıların hizmetine ücretsiz olarak sunulmuştur
+// yazılım kendi içerisinde  al ve sat sinyalleri üretir zaman zaman zararlar ede bilir ancak genellikle kazandırdığı tarafımızca test edilip onaylanmıştır  
+// günlük olarak değilde aylık ortalamada minimum %30 karlar getirdiği tarafımızca gözlemlenmiştir.
+// farklı fikirleriniz olursa tarafımıza ulaşıp bizi bilgilendirinki hep beraber daha ileriye taşıyalım
+// bizlere yazılımın + larını ve -lerini bildiren  kullanıcılar tarafımızdan ömür boyu üçretsiz olarak kullanacaklardır
+// araştırma  ve geliştirme konusunda  tüm üretilecek  yazılım ve algolarımızı ücretsiz olarak deneme hakları olacaktır 
+// bunun için yapılması gereken  sadece telegram kanalımıza gelip geliştirme ekibimize katılmaktır telegram link (https://t.me/joinchat/cAdoOOgk6ts0MzM0) tıklayınız
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//ALL RIGHTS ARE PROHIBITED. COPYRIGHTS RESERVE ALYA INTERNET TECHNOLOGIES, CANNOT BE CHANGED WITHOUT PERMISSION
+// ENGLİSH İNFO
+// this software has been developed by alya internet technologies and is offered to you, the investors, free of charge.
+// the software generates buy and sell signals in itself, it may cause losses from time to time, but generally it has been tested and approved by us
+// we have observed that it brings a minimum of 30% profits on a monthly average, not on a daily basis.
+// If you have different ideas, contact us and inform us so that we can move forward together
+// users who inform us of the +s and -s of the software will be used by us free of charge for life
+// will have the right to try all of our software and algorithms for research and development free of charge
+// all you need to do for this is to come to our telegram channel and join our development team telegram link (https://t.me/joinchat/cAdoOOgk6ts0MzM0) CLICK HERE
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TUTTI I DIRITTI SONO PROIBITI, I DIRITTI D'AUTORE RISERVATI AD ALYA INTERNET TECHNOLOGIES, NON POSSONO ESSERE MODIFICATI SENZA AUTORIZZAZIONE
+
+// INFORMAZIONI IN ITALIANO
+// questo software è stato sviluppato da alya internet Technologies ed è offerto a voi investitori gratuitamente.
+// il software genera di per sé segnali di acquisto e vendita, può causare perdite di tanto in tanto, ma generalmente è stato testato e approvato da noi
+// abbiamo osservato che porta un minimo del 30% di profitti su una media mensile, non su base giornaliera.
+// Se hai idee diverse, contattaci e informaci in modo che possiamo andare avanti insieme
+// gli utenti che ci informano sui + e -s del software saranno da noi utilizzati gratuitamente a vita
+// avrà il diritto di provare gratuitamente tutti i nostri software e algoritmi per la ricerca e lo sviluppo
+// tutto quello che devi fare per questo è venire sul nostro canale telegram e unirti al nostro link telegram del team di sviluppo  (https://t.me/joinchat/cAdoOOgk6ts0MzM0)CLIC
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// BÜTÜN HÜQUQLAR QAYDIRILIR, ALYA İNTERNET TEXNOLOGİYALARINA TƏCRÜF EDİLİR, İZNİ OLMADAN Dəyişdirilə bilməz.
+
+// AZƏRBAYCAN MƏLUMATI
+// bu proqram alya internet texnologiyaları tərəfindən hazırlanmışdır və sizə, sərmayəçilərə pulsuz olaraq təqdim olunur.
+// proqram öz -özünə alqı -satqı siqnalları yaradır, zaman -zaman itkilərə səbəb ola bilər, lakin ümumiyyətlə bizim tərəfimizdən sınaqdan keçirilmiş və təsdiq edilmişdir.
+// gündəlik olaraq deyil, aylıq orta hesabla minimum 30% qazanc gətirdiyini müşahidə etdik.
+// Fərqli fikirləriniz varsa, bizimlə əlaqə saxlayın və bizə məlumat verin ki, birlikdə irəliləyə bilək
+// proqramın +s və -sini bizə bildirən istifadəçilər ömrü boyu pulsuz istifadə edəcəyik
+// tədqiqat və inkişaf üçün bütün proqram və alqoritmlərimizi pulsuz sınaqdan keçirmək hüququna malik olacaq
+// bunun üçün etməli olduğunuz şey, telegram kanalımıza gələrək inkişaf qrupumuza qoşulmaq, telegram bağlantısını vurmaqdır (https://t.me/joinchat/cAdoOOgk6ts0MzM0)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ALhli hukuklar gadagan, ALYA INTERNET TEHNOLOGIESALARY ÜÇIN HUKUKLAR, Rugsat berilmezden üýtgedilip bilinmez
+
+// TÜRKMEN MAGLUMATY
+// bu programma üpjünçiligi alya internet tehnologiýalary tarapyndan işlenip düzüldi we size, maýadarlara mugt hödürlenýär.
+// programma üpjünçiligi signallary satyn alýar we satýar, wagtal-wagtal ýitgilere sebäp bolup biler, ýöne umuman biz tarapyndan synagdan geçirildi we tassyklandy
+// gündelik däl-de, her aýda ortaça 30% girdeji getirýändigini gördük.
+// Dürli pikirleriňiz bar bolsa, biziň bilen habarlaşyň we bilelikde öňe gitmegimiz üçin bize habar beriň
+// programma üpjünçiliginiň + s-lerini bize habar berýän ulanyjylar ömrümiz üçin mugt ulanylar
+// gözleg we ösüş üçin ähli programma üpjünçiligimizi we algoritmlerimizi mugt synap görmäge hukugy bolar
+// munuň üçin etmeli zadyňyz, telegram kanalymyza gelip, ösüş toparymyza goşulmak, telegram baglanyşygyna basyň (https://t.me/joinchat/cAdoOOgk6ts0MzM0)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// सभी अधिकार निषिद्ध हैं, ALYA इंटरनेट प्रौद्योगिकियों के लिए सुरक्षित कॉपीराइट, अनुमति के बिना बदला नहीं जा सकता
+
+// हिंदी जानकारी
+// यह सॉफ्टवेयर आलिया इंटरनेट प्रौद्योगिकियों द्वारा विकसित किया गया है और आपको, निवेशकों को, निःशुल्क प्रदान किया जाता है।
+// सॉफ्टवेयर अपने आप में सिग्नल खरीदने और बेचने के लिए उत्पन्न करता है, इससे समय-समय पर नुकसान हो सकता है, लेकिन आम तौर पर यह हमारे द्वारा परीक्षण और अनुमोदित किया गया है
+// हमने देखा है कि यह मासिक औसत पर न्यूनतम 30% लाभ लाता है, दैनिक आधार पर नहीं।
+// यदि आपके पास अलग-अलग विचार हैं, तो हमसे संपर्क करें और हमें सूचित करें ताकि हम एक साथ आगे बढ़ सकें
+// जो उपयोगकर्ता हमें सॉफ़्टवेयर के +s और -s के बारे में सूचित करते हैं, वे जीवन भर हमारे द्वारा निःशुल्क उपयोग किए जाएंगे
+// अनुसंधान और विकास के लिए हमारे सभी सॉफ़्टवेयर और एल्गोरिदम को निःशुल्क आज़माने का अधिकार होगा
+// इसके लिए आपको बस इतना करना है कि हमारे टेलीग्राम चैनल पर आएं और हमारी विकास टीम में शामिल हों, टेलीग्राम लिंक पर क्लिक करें (https://t.me/joinchat/cAdoOOgk6ts0MzM0)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ΟΛΑ ΤΑ ΔΙΚΑΙΩΜΑΤΑ ΑΠΑΓΟΡΕΥΟΝΤΑΙ, ΔΙΚΑΙΩΜΑΤΑ ΠΟΥ ΔΙΑΦΗΜΙΖΟΝΤΑΙ ΣΤΙΣ ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ ALYA, ΔΕΝ ΜΠΟΡΟΥΝ ΝΑ ΑΛΛΑΞΟΥΝ ΧΩΡΙΣ ΑΔΕΙΑ
+
+// ΕΛΛΗΝΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ
+// αυτό το λογισμικό έχει αναπτυχθεί από τεχνολογίες alya internet και προσφέρεται σε εσάς, τους επενδυτές, δωρεάν.
+// το λογισμικό δημιουργεί σήματα αγοράς και πώλησης από μόνο του, μπορεί να προκαλεί απώλειες κατά καιρούς, αλλά γενικά έχει δοκιμαστεί και εγκριθεί από εμάς
+// έχουμε παρατηρήσει ότι αποφέρει κέρδη τουλάχιστον 30% σε μηνιαίο μέσο όρο, όχι σε καθημερινή βάση.
+// Εάν έχετε διαφορετικές ιδέες, επικοινωνήστε μαζί μας και ενημερώστε μας ώστε να προχωρήσουμε μαζί
+// οι χρήστες που μας ενημερώνουν για τα +s και -s του λογισμικού θα χρησιμοποιηθούν από εμάς δωρεάν ισόβια
+// θα έχει το δικαίωμα να δοκιμάσει όλο το λογισμικό και τους αλγόριθμους μας για έρευνα και ανάπτυξη δωρεάν
+// το μόνο που χρειάζεται να κάνετε για αυτό είναι να έρθετε στο κανάλι μας στο τηλεγράφημα και να συμμετάσχετε στην ομάδα ανάπτυξης, 
+//κάντε κλικ στο σύνδεσμο τηλεγραφήματος https://t.me/joinchat/cAdoOOgk6ts0MzM0
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//すべての権利は禁止されており、著作権はALYA INTERNET TECHNOLOGIESに留保されており、許可なく変更することはできません。
+
+//日本の情報
+//このソフトウェアは、alyaインターネットテクノロジーによって開発され、投資家であるあなたに無料で提供されています。
+//ソフトウェアはそれ自体で売買シグナルを生成し、時々損失を引き起こす可能性がありますが、一般的にそれは私たちによってテストされ承認されています
+//毎日ではなく、月平均で最低30％の利益をもたらすことがわかりました。
+//アイデアが異なる場合は、一緒に前進できるように、お問い合わせください。
+//ソフトウェアの+ sと-sを通知したユーザーは、生涯無料で使用されます
+//研究開発のためのすべてのソフトウェアとアルゴリズムを無料で試す権利があります
+//これを行うために必要なのは、テレグラムチャネルにアクセスして開発チームに参加し、テレグラムリンク（https://t.me/joinchat/cAdoOOgk6ts0MzM0）をクリックすることだけです。
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ВСИЧКИ ПРАВА СА ЗАБРАНЕНИ, АВТОРСКИ ПРАВА, ЗАПАЗЕНИ НА ИНТЕРНЕТ ТЕХНОЛОГИИ НА ALYA, НЕ МОГАТ ДА СЕ ПРОМЯНАТ БЕЗ РАЗРЕШЕНИЕ
+
+// ИНФОРМАЦИЯ НА БЪЛГАРСКИ
+// този софтуер е разработен от интернет технологии и се предлага безплатно на вас, инвеститорите.
+// софтуерът генерира сигнали за покупка и продажба сам по себе си, може да причини загуби от време на време, но като цяло е тестван и одобрен от нас
+// наблюдавахме, че той носи минимум 30% печалба средномесечно, а не ежедневно.
+// Ако имате различни идеи, свържете се с нас и ни информирайте, за да можем заедно да продължим напред
+// потребителите, които ни информират за плюсовете и минусите на софтуера, ще бъдат използвани от нас безплатно за цял живот
+// ще има право да изпробва безплатно целия ни софтуер и алгоритми за научноизследователска и развойна дейност
+// всичко, което трябва да направите за това, е да посетите нашия телеграм канал и да се присъедините към нашия екип за разработка,
+//щракнете върху връзката на телеграмата https://t.me/joinchat/cAdoOOgk6ts0MzM0
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// TODOS LOS DERECHOS ESTÁN PROHIBIDOS, LOS DERECHOS DE AUTOR RESERVADOS A LAS TECNOLOGÍAS DE INTERNET DE ALYA, NO SE PUEDEN CAMBIAR SIN PERMISO
+
+// INFORMACIÓN EN ESPAÑOL
+// este software ha sido desarrollado por alya internet technologies y se ofrece a ustedes, los inversores, de forma gratuita.
+// el software genera señales de compra y venta en sí mismo, puede causar pérdidas de vez en cuando, pero generalmente ha sido probado y aprobado por nosotros
+// Hemos observado que aporta un mínimo de 30% de beneficios en promedio mensual, no a diario.
+// Si tienes ideas diferentes, contáctanos e infórmanos para que podamos avanzar juntos
+// los usuarios que nos informen de los + sy -s del software serán utilizados por nosotros de forma gratuita de por vida
+// tendrá derecho a probar todo nuestro software y algoritmos para investigación y desarrollo de forma gratuita
+// todo lo que necesita hacer para esto es venir a nuestro canal de telegramas y unirse a nuestro equipo de desarrollo,
+//haga clic en el enlace del telegrama (https://t.me/joinchat/cAdoOOgk6ts0MzM0)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TOUS LES DROITS SONT INTERDITS, LES DROITS D'AUTEUR RÉSERVÉS À ALYA INTERNET TECHNOLOGIES, NE PEUVENT ÊTRE MODIFIÉS SANS AUTORISATION
+
+// INFORMATIONS FRANÇAISES
+// ce logiciel a été développé par alya internet technologies et vous est offert, à vous les investisseurs, gratuitement.
+// le logiciel génère des signaux d'achat et de vente en lui-même, il peut occasionner des pertes de temps en temps, mais en général il a été testé et approuvé par nos soins
+// nous avons observé qu'il rapporte un minimum de 30% de bénéfices en moyenne mensuelle, pas au quotidien.
+// Si vous avez des idées différentes, contactez-nous et informez-nous afin que nous puissions avancer ensemble
+// les utilisateurs qui nous informent des + et - du logiciel seront utilisés par nous gratuitement à vie
+// aura le droit d'essayer gratuitement tous nos logiciels et algorithmes de recherche et développement
+// tout ce que vous devez faire pour cela est de venir sur notre canal de télégramme et de rejoindre notre équipe de développement, 
+//cliquez sur le lien du télégramme https://t.me/joinchat/cAdoOOgk6ts0MzM0
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ყველა უფლება აკრძალულია, საავტორო უფლებები დაცულია ALYA INTERNET ტექნოლოგიებზე, არ შეიძლება შეიცვალოს ნებართვის გარეშე
+
+// GEORGIAN INFORMATION
+// ეს პროგრამული უზრუნველყოფა შემუშავებულია ალიას ინტერნეტ ტექნოლოგიებით და გთავაზობთ თქვენ, ინვესტორებს, უფასოდ.
+// პროგრამული უზრუნველყოფა თავისთავად ქმნის სიგნალებს ყიდვისა და გაყიდვისთვის, მას შეუძლია დროდადრო გამოიწვიოს ზარალი, მაგრამ ზოგადად ის გამოცდილია და დამტკიცებულია ჩვენ მიერ
+// ჩვენ შევამჩნიეთ, რომ მას მოაქვს მინიმუმ 30% მოგება ყოველთვიურად საშუალოდ და არა ყოველდღიურად.
+// თუ თქვენ გაქვთ განსხვავებული იდეები, დაგვიკავშირდით და შეგვატყობინეთ, რომ ჩვენ ერთად წინსვლა შევძლოთ
+// მომხმარებლები, რომლებიც გვაცნობებენ პროგრამული უზრუნველყოფის +s და -ს შესახებ, ჩვენს მიერ უფასოდ იქნება გამოყენებული უვადოდ
+// ექნება უფლება უფასოდ გამოიყენოს ჩვენი პროგრამული უზრუნველყოფა და ალგორითმები კვლევისა და განვითარებისათვის
+// ყველაფერი რაც თქვენ გჭირდებათ რომ გააკეთოთ არის მობრძანდეთ ჩვენს ტელეგრამის არხზე და შეუერთდეთ ჩვენს განვითარების გუნდს, დააწკ
+//აპუნეთ ტელეგრამის ბმულზე    https://t.me/joinchat/cAdoOOgk6ts0MzM0
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Все права запрешены
+//Авторское право принадлежит Alya интернет технологии 
+//Без разрешения не может быть изменен
+
+
+//ИНФОРМАЦИЯ НА ТУРЕЦКОМ ЯЗЫКЕ
+// Это приложение разработано Alya Internet Technologies и предоставляется вам, инвесторам, бесплатно.
+// Само программное обеспечение генерирует торговые сигналы и может вызвать случайные убытки, но в целом оно было протестировано и одобрено нами.
+// По нашим наблюдениям, он приносит минимум 30% прибыли в среднем за месяц, а не за день.
+// Если у вас есть разные идеи, свяжитесь с нами и сообщите нам, чтобы мы могли двигаться вперед вместе.
+// Пользователи, которые расскажут нам о плюсах и минусах программы, будут использовать программу бесплатно всю жизнь.
+// Они будут иметь право бесплатно тестировать все наше программное обеспечение и алгоритмы для исследований и разработок.
+// Для этого зайдите на наш телеграм-канал  и присоединитесь   к Telegram-соединению нашей группы разработчиков(https://t.me/joinchat/cAdo
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//PROJEDE EMEĞİ GEÇENLER
+//
+//FADIL ALTUNKAYNAK
+//SELMAN ALTUNKAYNAK
+//ALYA ALTUNKAYNAK
+//DERYA CANBULAT
+//EMRE KIRGIZ
+//ALİ KORKMAZ 
+//ZİYA BALKI 
+//KIVANÇ ÖZBİLGİÇ 
+//YUNUS AYDOĞDU 
+//RABİA GEZEN 
+//MERVE ÖZDOĞAN 
+//BURAK DİRİK 
+//TUĞBA VURKIR 
+//BATUHAN BALKI 
+//SARAH SCOTS 
+//CAMİLA STEVE 
+//MARİAN LİSA 
+//OKAN AŞILI
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//COMPAYNS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//ALYA LTD
+//LEMON LTD
+//MİCROSOFT LTD
+//EDÖNÜŞÜM LTD
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// © HomelessAlya
+// A product of Project Alya internet teknolojileri Tic.Ltd.Şti
+//@version=4
+study("Quantum Robot V2", overlay=true)
+
+//Gathers User Inputs
+voidLines = input(true, "Void Lines On / Off")
+dashOn = input(true, "Dashboard On / Off")
+colorBar = input(true, "Signal Bars On / Off")
+srLines = input(false, "Support & Resistance Lines On / Off")
+emaLines = input(false, "EMA (8, 200) On / Off")
+bsSignals = input(true, "Buy & Sell Signals On / Off")
+afibOn = input(false, "Fibonacci Retracement On / Off")
+dashDist = input(13, "Dashboard Distance")
+dashColor = input(color.new(#696969, 80), "Dashboard Color", inline="Dash Line")
+dashTextColor = input(color.new(#ffffff, 0), "Text Color", inline="Dash Line")
+
+//Dashboard için Volatiliteyi Hesaplar
+atr = atr(14)
+stdAtr = 2 * stdev(atr, 20)
+smaAtr = sma(atr, 20)
+topAtrDev = smaAtr + stdAtr
+bottomAtrDev = smaAtr - stdAtr
+calcDev = (atr - bottomAtrDev) / (topAtrDev - bottomAtrDev)
+percentVol = (40 * calcDev + 30)
+
+//Gösterge Tablosu için Hacmi Hesaplar
+volumeDash = volume
+
+//Pano için RSI
+rsiDash = rsi(close, 14)
+
+//Gösterge Tablosu için Duyarlılığı Hesaplar
+ema9 = ema(close, 9)
+totalSentTxt = ema9 > ema9[2] ? "Bullish" : ema9 < ema9[2] ? "Bearish" : "Flat"
+
+//Trend Paneli için Her Zaman Çerçevesini Tanımlar
+sma = sma(close, 50)
+oneM = security(syminfo.tickerid, "1", sma, barmerge.gaps_off, barmerge.lookahead_off)
+fiveM = security(syminfo.tickerid, "5", sma, barmerge.gaps_off, barmerge.lookahead_off)
+fifteenM = security(syminfo.tickerid, "15", sma, barmerge.gaps_off, barmerge.lookahead_off)
+thirtyM = security(syminfo.tickerid, "30", sma, barmerge.gaps_off, barmerge.lookahead_off)
+oneH = security(syminfo.tickerid, "60", sma, barmerge.gaps_off, barmerge.lookahead_off)
+twoH = security(syminfo.tickerid, "120", sma, barmerge.gaps_off, barmerge.lookahead_off)
+fourH = security(syminfo.tickerid, "240", sma, barmerge.gaps_off, barmerge.lookahead_off)
+weekly = security(syminfo.tickerid, "W", sma, barmerge.gaps_off, barmerge.lookahead_off)
+monthly = security(syminfo.tickerid, "M", sma, barmerge.gaps_off, barmerge.lookahead_off)
+daily = security(syminfo.tickerid, "D", sma, barmerge.gaps_off, barmerge.lookahead_off)
+
+//Trend Paneli için Yükseliş Trendini Tanımlar
+oneMUp = oneM > oneM[1]
+fiveMUp = fiveM > fiveM[1]
+fifteenMUp = fifteenM > fifteenM[1]
+thirtyMUp = thirtyM > thirtyM[1]
+oneHUp = oneH > oneH[1]
+twoHUp = twoH > twoH[1]
+fourHUp = fourH > fourH[1]
+weeklyUp = weekly > weekly[1]
+monthlyUp = monthly > monthly[1]
+dailyUp = daily > daily[1]
+
+//Trend Paneli için Mevcut Durumun Yükseliş Eğilimi mi Düşüş Eğilimi mi olduğunu kontrol eder
+up = "📈"
+down = "📉"
+oneMTrend = oneMUp ? up : down
+fiveMTrend = fiveMUp ? up : down
+fifteenMTrend = fifteenMUp ? up : down
+thirtyMTrend = thirtyMUp ? up : down
+oneHTrend = oneHUp ? up : down
+twoHTrend = twoHUp ? up : down
+fourHTrend = fourHUp ? up : down
+weeklyTrend = weeklyUp ? up : down
+monthlyTrend = monthlyUp ? up : down
+dailyTrend = dailyUp ? up : down
+
+if dashOn
+   label lemonLabel = label.new(time, close,
+     text="Coin Dashboard ☁️"
+     + "\n━━━━━━━━━━━━━━━━━"
+     + "\n            Market Information "
+     + "\n━━━━━━━━━━━━━━━━━"
+     + "\n🎈   Volatility                     | " + tostring(percentVol, "##.##") + "%"
+     + "\n🎈 Volume                           | " + tostring(volumeDash,"##.##" )
+     + "\n🎈 RSI                                           | " + tostring(rsiDash, "##.##")
+     + "\n🎈 Current Sentiment | " + totalSentTxt
+     + "\n━━━━━━━━━━━━━━━━━"
+     + "\n               Quantum Trend Panel "
+     + "\n━━━━━━━━━━━━━━━━━"
+     + "\n     1 Minute | " + oneMTrend + "         2 Hour | " + twoHTrend
+     + "\n     5 Minute | " + fiveMTrend + "         4 Hour | " + fourHTrend
+     + "\n        15 Minute | " + fifteenMTrend + "         Weekly | " + weeklyTrend
+     + "\n        30 Minute | " + thirtyMTrend + "       Monthly |     " + monthlyTrend
+     + "\n        1 Hour | " + oneHTrend + "                Daily | " + dailyTrend
+     + "\n━━━━━━━━━━━━━━━━━"
+     + "\n                        AlyaNet -Lemon ",
+     color=dashColor, xloc= xloc.bar_time, style=label.style_label_left, textcolor=dashTextColor, textalign=text.align_left)
+    label.set_x(lemonLabel, label.get_x(lemonLabel) + round(change(time)*dashDist))
+    label.delete(lemonLabel[1])
+
+//Renk Gradyan Kodu
+//Bunu Yaptığı için @LunaOwl'a sesleniyorum!
+
+//Red                                 //Orange
+Red_1 = color.new(#FF0000,  0),       Orange_1 = color.new(#FF9800,  0)
+Red_2 = color.new(#FF0000, 30),       Orange_2 = color.new(#FF9800, 30)
+Red_3 = color.new(#FF0000, 50),       Orange_3 = color.new(#FF9800, 50)
+Red_4 = color.new(#FF0000, 60),       Orange_4 = color.new(#FF9800, 70)
+Red_5 = color.new(#FF0000, 80),       Orange_5 = color.new(#FF9800, 80)
+
+//Yellow                              //Green
+Yellow_1 = color.new(#FFE500,  0),    Green_1 = color.new(#00FF00,  0)
+Yellow_2 = color.new(#FFE500, 30),    Green_2 = color.new(#00FF00, 30)
+Yellow_3 = color.new(#FFE500, 50),    Green_3 = color.new(#00FF00, 50)
+Yellow_4 = color.new(#FFE500, 60),    Green_4 = color.new(#00FF00, 70)
+Yellow_5 = color.new(#FFE500, 80),    Green_5 = color.new(#00FF00, 80)
+
+//Blue                                //Indigo
+Blue_1 = color.new(#4985E7,  0),      Indigo_1 = color.new(#7A2BCE,  0)
+Blue_2 = color.new(#4985E7, 30),      Indigo_2 = color.new(#7A2BCE, 30)
+Blue_3 = color.new(#4985E7, 50),      Indigo_3 = color.new(#7A2BCE, 50)
+Blue_4 = color.new(#4985E7, 60),      Indigo_4 = color.new(#7A2BCE, 60)
+Blue_5 = color.new(#4985E7, 80),      Indigo_5 = color.new(#7A2BCE, 80)
+
+//Purple
+Purple_1 = color.new(#D12FAD,  0)
+Purple_2 = color.new(#D12FAD, 30)
+Purple_3 = color.new(#D12FAD, 50)
+Purple_4 = color.new(#D12FAD, 60)
+Purple_5 = color.new(#D12FAD, 80)
+
+
+//Creates Color Variable       //Creates Math Variable
+var color c = na,              var int k = na
+
+k := nz(k[1], 1)      //This Equation Allows the Colors to Loop
+
+//This Code Loops Through 63 Shades of 7 Colors//
+
+if k == 1
+    c := Red_5
+if k == 2
+    c := Red_4
+if k == 3
+    c := Red_3
+if k == 4
+    c := Red_2
+if k == 5
+    c := Red_1
+if k == 6
+    c := Red_2
+if k == 7
+    c := Red_3
+if k == 8
+    c := Red_4
+if k == 9
+    c := Red_5
+if k == 10
+    c := Orange_5
+if k == 11
+    c := Orange_4
+if k == 12
+    c := Orange_3
+if k == 13
+    c := Orange_2
+if k == 14
+    c := Orange_1
+if k == 15
+    c := Orange_2
+if k == 16
+    c := Orange_3
+if k == 17
+    c := Orange_4
+if k == 18
+    c := Orange_5
+if k == 19
+    c := Yellow_5
+if k == 20
+    c := Yellow_4
+if k == 21
+    c := Yellow_3
+if k == 22
+    c := Yellow_2
+if k == 23
+    c := Yellow_1
+if k == 24
+    c := Yellow_2
+if k == 25
+    c := Yellow_3
+if k == 26
+    c := Yellow_4
+if k == 27
+    c := Yellow_5
+if k == 28
+    c := Green_5
+if k == 29
+    c := Green_4
+if k == 30
+    c := Green_3
+if k == 31
+    c := Green_2
+if k == 32
+    c := Green_1
+if k == 33
+    c := Green_2
+if k == 34
+    c := Green_3
+if k == 35
+    c := Green_4
+if k == 36
+    c := Green_5
+if k == 37
+    c := Blue_5
+if k == 38
+    c := Blue_4
+if k == 39
+    c := Blue_3
+if k == 40
+    c := Blue_2
+if k == 41
+    c := Blue_1
+if k == 42
+    c := Blue_2
+if k == 43
+    c := Blue_3
+if k == 44
+    c := Blue_4     
+if k == 45
+    c := Blue_5   
+if k == 46
+    c := Indigo_5
+if k == 47
+    c := Indigo_4
+if k == 48
+    c := Indigo_3
+if k == 49
+    c := Indigo_2
+if k == 50
+    c := Indigo_1
+if k == 51
+    c := Indigo_2
+if k == 52
+    c := Indigo_3
+if k == 53
+    c := Indigo_4
+if k == 54
+    c := Indigo_5
+if k == 55
+    c := Purple_5
+if k == 56
+    c := Purple_4
+if k == 57
+    c := Purple_3
+if k == 58
+    c := Purple_2
+if k == 59
+    c := Purple_1
+if k == 60
+    c := Purple_2
+if k == 61
+    c := Purple_3
+if k == 62
+    c := Purple_4
+if k == 63
+    c := Purple_5
+
+k := k + 1
+
+if k > 63
+    k := 1
+
+// Auto Fibonacci Kodu
+threshold_multiplier = input(3, "Fibonacci Deviation")
+dev_threshold = atr(10) / close * 100 * threshold_multiplier
+depth = 10
+reverse = input(false, "Reverse Fib?")
+var extendLeft = input(false, "Extend Left    |    Extend Right", inline = "Extend Lines")
+var extendRight = input(true, "", inline = "Extend Lines")
+var extending = extend.none
+if extendLeft and extendRight
+    extending := extend.both
+if extendLeft and not extendRight
+    extending := extend.left
+if not extendLeft and extendRight
+    extending := extend.right
+prices = input(true, "Show Prices?")
+levels = input(true, "Show Levels?", inline = "Levels")
+levelsFormat = input("Percent", "", options = ["Values", "Percent"], inline = "Levels")
+labelsPosition = input("Right", "Fib Label Position", options = ["Left", "Right"])
+
+var line lineLast = na
+var int iLast = 0
+var int iPrev = 0
+var float pLast = 0
+var isHighLast = false // otherwise the last pivot is a low pivot
+
+pivots(src, length, isHigh) =>
+    l2 = length * 2
+    c2 = nz(src[length])
+    ok = true
+    for i = 0 to l2
+        if isHigh and src[i] > c2
+            ok := false
+
+        if not isHigh and src[i] < c2
+            ok := false
+    if ok
+        [bar_index[length], c2]
+    else
+        [int(na), float(na)]
+[iH, pH] = pivots(high, depth / 2, true)
+[iL, pL] = pivots(low, depth / 2, false)
+
+calc_dev(base_price, price) =>
+    100 * (price - base_price) / price
+
+pivotFound(dev, isHigh, index, price) =>
+    if isHighLast == isHigh and not na(lineLast)
+        // same direction
+        if isHighLast ? price > pLast : price < pLast
+            line.set_xy2(lineLast, index, price)
+            [lineLast, isHighLast]
+        else
+            [line(na), bool(na)]
+    else // reverse the direction (or create the very first line)
+        if abs(dev) > dev_threshold
+            // price move is significant
+            id = line.new(iLast, pLast, index, price, color=na, width=1, style=line.style_dashed)
+            [id, isHigh]
+        else
+            [line(na), bool(na)]
+
+if not na(iH)
+    dev = calc_dev(pLast, pH)
+    [id, isHigh] = pivotFound(dev, true, iH, pH)
+    if not na(id)
+        if id != lineLast
+            line.delete(lineLast)
+        lineLast := id
+        isHighLast := isHigh
+        iPrev := iLast
+        iLast := iH
+        pLast := pH
+else
+    if not na(iL)
+        dev = calc_dev(pLast, pL)
+        [id, isHigh] = pivotFound(dev, false, iL, pL)
+        if not na(id)
+            if id != lineLast
+                line.delete(lineLast)
+            lineLast := id
+            isHighLast := isHigh
+            iPrev := iLast
+            iLast := iL
+            pLast := pL
+
+_draw_line(price, col) =>
+    var id = line.new(iLast, price, bar_index, price, color=col, width=1, extend=extending)
+    if not na(lineLast)
+        line.set_xy1(id, line.get_x1(lineLast), price)
+        line.set_xy2(id, line.get_x2(lineLast), price)
+
+_draw_label(price, txt, txtColor) =>
+    x = labelsPosition == "Left" ? line.get_x1(lineLast) : not extendRight ? line.get_x2(lineLast) : bar_index
+    labelStyle = labelsPosition == "Left" ? label.style_label_right : label.style_label_left
+    align = labelsPosition == "Left" ? text.align_right : text.align_left
+    labelsAlignStrLeft = txt + '\n ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏ \n'
+    labelsAlignStrRight = '       ' + txt + '\n ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏  ‏ \n'
+    labelsAlignStr = labelsPosition == "Left" ? labelsAlignStrLeft : labelsAlignStrRight
+    var id = label.new(x=x, y=price, text=labelsAlignStr, textcolor=txtColor, style=labelStyle, textalign=align, color=#00000000)
+    label.set_xy(id, x, price)
+    label.set_text(id, labelsAlignStr)
+    label.set_textcolor(id, txtColor)
+
+_wrap(txt) =>
+    "(" + tostring(txt, "#.##") + ")"
+
+_label_txt(level, price) =>
+    l = levelsFormat == "Values" ? tostring(level) + " " : tostring(level * 100) + "% "
+    (levels ? l : " ") + (prices ? _wrap(price) : " ")
+
+_crossing_level(sr, r) =>
+    (r > sr and r < sr[1]) or (r < sr and r > sr[1])
+
+startPrice = reverse ? line.get_y1(lineLast) : pLast
+endPrice = reverse ? pLast : line.get_y1(lineLast)
+
+iHL = startPrice > endPrice
+diff = (iHL ? -1 : 1) * abs(startPrice - endPrice)
+
+processLevel(show, value, colorL) => 
+    float m = value
+    r = startPrice + diff * m
+    if show
+        _draw_line(r, colorL)
+        _draw_label(r, _label_txt(m, r), colorL)
+
+show_0 = true
+value_0 = 0
+color_0 = #787b86
+if afibOn
+    processLevel(show_0, value_0, color_0)
+
+show_0_236 = true
+value_0_236 = 0.236
+color_0_236 = #f44336
+if afibOn
+    processLevel(show_0_236, value_0_236, color_0_236)
+
+show_0_382 = true
+value_0_382 = 0.382
+color_0_382 = #81c784
+if afibOn
+    processLevel(show_0_382, value_0_382, color_0_382)
+
+show_0_5 = true
+value_0_5 = 0.5
+color_0_5 = #4caf50
+if afibOn
+    processLevel(show_0_5, value_0_5, color_0_5)
+
+show_0_618 = true
+value_0_618 = 0.618
+color_0_618 = #009688
+if afibOn
+    processLevel(show_0_618, value_0_618, color_0_618)
+
+show_0_786 = true
+value_0_786 = 0.786
+color_0_786 = #64b5f6
+if afibOn
+    processLevel(show_0_786, value_0_786, color_0_786)
+
+show_1 = true
+value_1 = 1
+color_1 = #787b86
+if afibOn
+    processLevel(show_1, value_1, color_1)
+
+//Destek / Direnç Hatları
+h1000 = highest(1000)
+h750 = highest(750)
+h500 = highest(500)
+h250 = highest(250)
+h100 = highest(100)
+h50 = highest(50)
+h10 = highest(10)
+plot(srLines ? h1000 : na, title='R1', color = close > h1000 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h750 : na, title='R2', color = close > h750 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h500 : na, title='R3', color = close > h500 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h250 : na, title='R4', color = close > h250 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h100 : na, title='R5', color = close > h100 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h50 : na, title='R6', color = close > h50 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? h10 : na, title='R6', color = close > h50 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+
+l1000 = lowest(1000)
+l750 = lowest(750)
+l500 = lowest(500)
+l250 = lowest(250)
+l100 = lowest(100)
+l50 = lowest(50)
+l10 = lowest(10)
+plot(srLines ? l1000 : na, title='S1', color = close > l1000 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l750 : na, title='S2', color = close > l750 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l500 : na, title='S3', color = close > l500 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l250 : na, title='S4', color = close > l250 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l100 : na, title='S5', color = close > l100 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l50 : na, title='S6', color = close > l50 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+plot(srLines ? l10 : na, title='S6', color = close > l50 ? color.green : color.red, linewidth=1, offset=-9999, trackprice=true)
+
+//Boşluk Çizgilerinde Kullanılan Değişkenleri Tanımlar
+basis = sma(close, 20)
+twoDev = 2 * stdev(close, 20)
+upper3 = basis + twoDev
+lower3 = basis - twoDev
+threeDev = 3 * stdev(close, 20)
+upper4 = basis + threeDev
+lower4 = basis - threeDev
+
+//Plost Boş Çizgiler
+plot(voidLines ? basis : na, "Basis", color.purple, editable=false)
+p5 = plot(voidLines ? upper3 : na, "Upper 200%", c, editable=false)
+p6 = plot(voidLines ? lower3 : na, "Lower 200%", c, editable=false)
+p7 = plot(voidLines ? upper4 : na, "Upper 300%", c, editable=false)
+p8 = plot(voidLines ? lower4 : na, "Lower 300%", c, editable=false)
+fill(p7, p5, color.teal, 75)
+fill(p8, p6, color.purple, 75)
+
+//Renklendirme Çubukları için Kuralları Tanımlar
+colorBars = close > basis ? color.teal : close < basis ? color.purple : na
+
+//EMA Değişkenlerini Tanımlar
+ema8 = ema(close, 20)
+ema200 = ema(close, 200)
+
+//Renkler Çubuklar
+barcolor(colorBar ? colorBars : na)
+
+//Plots EMA Çizgileri
+plot(emaLines ? ema8 : na, "EMA 20", color.white, 2)
+plot(emaLines ? ema200 : na, "EMA 200", color.green, 2)
+
+// Al ve Sat Sinyalleri
+EMAlength=input(55,"EMA LENGTH?")
+
+src = ohlc4
+haOpen = 0.0
+haOpen := (src + nz(haOpen[1])) / 2
+haC = (ohlc4 + nz(haOpen) + max(high, nz(haOpen)) + min(low, nz(haOpen))) / 4
+EMA1 = ema(haC, EMAlength)
+EMA2 = ema(EMA1, EMAlength)
+EMA3 = ema(EMA2, EMAlength)
+TMA1 = 3 * EMA1 - 3 * EMA2 + EMA3
+EMA4 = ema(TMA1, EMAlength)
+EMA5 = ema(EMA4, EMAlength)
+EMA6 = ema(EMA5, EMAlength)
+TMA2 = 3 * EMA4 - 3 * EMA5 + EMA6
+IPEK = TMA1 - TMA2
+YASIN = TMA1 + IPEK
+EMA7 = ema(hlc3, EMAlength)
+EMA8 = ema(EMA7, EMAlength)
+EMA9 = ema(EMA8, EMAlength)
+TMA3 = 3 * EMA7 - 3 * EMA8 + EMA9
+EMA10 = ema(TMA3, EMAlength)
+EMA11 = ema(EMA10, EMAlength)
+EMA12 = ema(EMA11, EMAlength)
+TMA4 = 3 * EMA10 - 3 * EMA11 + EMA12
+IPEK1 = TMA3 - TMA4
+YASIN1 = TMA3 + IPEK1
+
+mavi = YASIN1
+kirmizi = YASIN
+
+
+longCond=mavi>kirmizi and mavi[1]<=kirmizi[1]
+shortCond=mavi<kirmizi and mavi[1]>=kirmizi[1]
+
+trendState = kirmizi < mavi ? true : kirmizi > mavi ? false : na
+closePlot = plot(kirmizi, title="Close Line", color=#009900, linewidth=10, style=plot.style_line, transp=90)
+openPlot = plot(mavi, title="Open Line", color=#CC0000, linewidth=10, style=plot.style_line, transp=90)
+closePlotU = plot(trendState ? kirmizi : na, transp=100, editable=false)
+openPlotU = plot(trendState ? mavi : na, transp=100, editable=false)
+closePlotD = plot(trendState ? na : kirmizi, transp=100, editable=false)
+openPlotD = plot(trendState ? na : mavi, transp=100, editable=false)
+fill(openPlotU, closePlotU, title="Up Trend Fill", color=#009900, transp=1)
+fill(openPlotD, closePlotD, title="Down Trend Fill", color=#CC0000, transp=1)
+
+
+
+
+
+last_signal = 0
+long_final = longCond and (nz(last_signal[1]) == 0 or nz(last_signal[1]) == -1)
+short_final = shortCond and (nz(last_signal[1]) == 0 or nz(last_signal[1]) == 1)
+
+alertcondition(long_final, title="buy alarm", message="AL signal!!!")
+alertcondition(short_final, title="sell alarm", message="SAT signal!!!")
+last_signal := long_final ? 1 : short_final ? -1 : last_signal[1]
+
+plotshape(long_final, style=shape.labelup, location=location.belowbar, color=color.blue, size=size.tiny, title="buy label", text="Buy", textcolor=color.white)
+plotshape(short_final, style=shape.labeldown, location=location.abovebar, color=color.red, size=size.tiny, title="sell label", text="Sell", textcolor=color.white)
+
+
+
+
+
+//
