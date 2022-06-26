@@ -1,0 +1,144 @@
+//@version=3
+
+
+//Original Script > @FADIL
+
+// Actual Version > @ALYANET
+
+
+//////////////////////////////////////////////////////////////////////////
+// Settings for 5min chart, BTCUSDC. For Other coin, change the paremeters
+//////////////////////////////////////////////////////////////////////////
+
+
+study(title="alyanet 5 dk al sat", overlay=true)
+
+// Source
+
+src = input(defval=close, title="Source")
+
+// Sampling Period
+// Settings for 5min chart, BTCUSDC. For Other coin, change the paremeters
+
+per = input(defval=100, minval=1, title="Sampling Period")
+
+// Range Multiplier
+
+mult = input(defval=3.0, minval=0.1, title="Range Multiplier")
+
+// Smooth Average Range
+
+smoothrng(x, t, m)=>
+    wper      = (t*2) - 1
+    avrng     = ema(abs(x - x[1]), t)
+    smoothrng = ema(avrng, wper)*m
+    smoothrng
+smrng = smoothrng(src, per, mult)
+
+// Range Filter
+
+rngfilt(x, r)=>
+    rngfilt  = x
+    rngfilt := x > nz(rngfilt[1]) ? ((x - r) < nz(rngfilt[1]) ? nz(rngfilt[1]) : (x - r)) : ((x + r) > nz(rngfilt[1]) ? nz(rngfilt[1]) : (x + r))
+    rngfilt
+filt = rngfilt(src, smrng)
+
+// Filter Direction
+
+upward   = 0.0
+upward  := filt > filt[1] ? nz(upward[1]) + 1 : filt < filt[1] ? 0 : nz(upward[1])
+downward = 0.0
+downward := filt < filt[1] ? nz(downward[1]) + 1 : filt > filt[1] ? 0 : nz(downward[1])
+
+// Target Bands
+
+hband = filt + smrng
+lband = filt - smrng
+
+// Colors
+
+filtcolor = upward > 0 ? lime : downward > 0 ? red : orange
+barcolor  = (src > filt) and (src > src[1]) and (upward > 0) ? lime : (src > filt) and (src < src[1]) and (upward > 0) ? green : 
+   (src < filt) and (src < src[1]) and (downward > 0) ? red : (src < filt) and (src > src[1]) and (downward > 0) ? maroon : orange
+
+filtplot = plot(filt, color=filtcolor, linewidth=3, title="Range Filter")
+
+// Target
+
+hbandplot = plot(hband, color=aqua, transp=100, title="High Target")
+lbandplot = plot(lband, color=fuchsia, transp=100, title="Low Target")
+
+// Fills
+
+fill(hbandplot, filtplot, color=aqua, title="High Target Range")
+fill(lbandplot, filtplot, color=fuchsia, title="Low Target Range")
+
+// Bar Color
+
+barcolor(barcolor)
+
+// Break Outs
+
+longCond = na
+shortCond = na
+longCond := ((src > filt) and (src > src[1]) and (upward > 0)) or ((src > filt) and (src < src[1]) and (upward > 0)) 
+shortCond := ((src < filt) and (src < src[1]) and (downward > 0)) or ((src < filt) and (src > src[1]) and (downward > 0))
+
+CondIni = 0
+CondIni := longCond ? 1 : shortCond ? -1 : CondIni[1]
+longCondition = longCond and CondIni[1] == -1
+shortCondition = shortCond and CondIni[1] == 1
+
+//Alerts
+
+plotshape(longCondition, title = "Buy Signal", text ="Buy", textcolor = white, style=shape.labelup, size = size.normal, location=location.belowbar, color = green, transp = 0)
+plotshape(shortCondition, title = "Sell Signal", text ="Sell", textcolor = white, style=shape.labeldown, size = size.normal, location=location.abovebar, color = red, transp = 0)
+
+alertcondition(longCondition, title="Buy Alert", message = "Buy")
+alertcondition(longCondition, title="Buy Alert", message = "Buy")
+alertcondition(longCondition, title="Buy Alert", message = "Buy")
+alertcondition(shortCondition, title="Sell Alert", message = "Sell")
+
+// EMA input//
+Length1 = input(21, minval=1)
+Length2 = input(50, minval=1)
+Length3 = input(89, minval=1)
+Length4 = input(200, minval=1)
+Length5 = input(377, minval=1)
+
+// MA input//
+Length6 = input(10, minval=1)
+Length7 = input(30, minval=1)
+Length8 = input(50, minval=1)
+Length9 = input(128, minval=1)
+Length10 = input(200, minval=1)
+
+xPrice = close
+
+// EMA //
+xEMA1 = ema(xPrice, Length1)
+xEMA2 = ema(xPrice, Length2)
+xEMA3 = ema(xPrice, Length3)
+xEMA4 = ema(xPrice, Length4)
+xEMA5 = ema(xPrice, Length5)
+
+// MA //
+xSMA1 = sma(xPrice, Length6)
+xSMA2 = sma(xPrice, Length7)
+xSMA3 = sma(xPrice, Length8)
+xSMA4 = sma(xPrice, Length9)
+xSMA5 = sma(xPrice, Length10)
+
+// EMA plot//
+plot(xEMA1, linewidth=2, color=yellow, title="EMA 1")
+plot(xEMA2, linewidth=2, color=lime, title="EMA 2")
+plot(xEMA3, linewidth=2, color=aqua, title="EMA 3")
+plot(xEMA4, linewidth=2, color=purple, title="EMA 4")
+plot(xEMA5, linewidth=2, color=blue, title="EMA 5")
+
+// MA plot//
+plot(xSMA1, linewidth=2, color=orange, title="MA 1")
+plot(xSMA2, linewidth=2, color=purple, title="MA 2")
+plot(xSMA3, linewidth=2, color=aqua, title="MA 3")
+plot(xSMA4, linewidth=2, color=green, title="MA 4")
+plot(xSMA5, linewidth=2, color=white, title="MA 5")
